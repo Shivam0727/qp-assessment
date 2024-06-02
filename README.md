@@ -255,6 +255,21 @@ Global exception handling is implemented using `ControllerAdvice`. Custom except
 
 ## Database Configuration
 
+In application.properties file make sure to change your configuration according to your database.
+
+	Example :
+
+ 	Create database with name : GroceryBookingApi
+
+ 	My database configuration :
+  
+ 	spring.datasource.url=jdbc:mysql://localhost:3306/GroceryBookingApi
+	spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+	spring.datasource.username=root
+	spring.datasource.password=Shivam@07122000
+
+## Database Configuration
+
 The application uses a MySQL database. The database configuration can be found in the `application.properties` file. When running the application with Docker, the database connection details are provided via environment variables in the `docker-compose.yml` file.
 
 ## Docker Configuration
